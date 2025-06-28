@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can be added below */
+
+/* Global dark mode styles */
+html {
+  background-color: #f9fafb; /* light mode background */
+}
+
+html.dark {
+  background-color: #111827; /* dark mode background */
+}
+
+body {
+  background-color: inherit;
+}
+
+/* Ensure no white flashes during theme transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
